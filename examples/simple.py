@@ -215,8 +215,8 @@ def main() -> None:
                     logger.warning(
                         f"Bundle cancellation returned 400 error (bundle may not exist), ignoring: {e}"
                     )
-            else:
-                raise
+                else:
+                    raise
 
     log_account_balances(w3, sender.address, receiver)
 
